@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Información</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h3 class="text-center">Actualizar Información</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+                            </div>
+                            <div class="form-group">
+                                <label for="deporte">Deporte favorito:</label>
+                                <select class="form-control" id="deporte">
+                                    <option>fútbol americano</option>
+                                    <option>baloncesto</option>
+                                    <option>béisbol</option>
+                                    <option>fútbol</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Género:</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino">
+                                        <label class="form-check-label" for="masculino">masculino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+                                        <label class="form-check-label" for="femenino">femenino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="genero" id="no-seguro" value="no estoy seguro">
+                                        <label class="form-check-label" for="no-seguro">no estoy seguro</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="residencia">Estado de residencia:</label>
+                                <select class="form-control" id="residencia">
+                                    <option>New York</option>
+                                    <option>California</option>
+                                    <option>Florida</option>
+                                    <option>Texas</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="mayor">
+                                    <label class="form-check-label" for="mayor">21 años o más</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Modelos de autos que posees:</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="ford">
+                                    <label class="form-check-label" for="ford">Ford</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="chrysler">
+                                    <label class="form-check-label" for="chrysler">Chrysler</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="toyota">
+                                    <label class="form-check-label" for="toyota">Toyota</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="nissan">
+                                    <label class="form-check-label" for="nissan">Nissan</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-custom btn-block">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

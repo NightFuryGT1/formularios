@@ -1,0 +1,30 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #d4af37;
+    color: white;
+}
+
+.card-header h3 {
+    margin: 0;
+}
+
+.form-control, .form-check-input {
+    border-radius: 0.25rem;
+}
+
+.btn-custom {
+    background-color: #d4af37;
+    border-color: #d4af37;
+}
+
+.btn-custom:hover {
+    background-color: #c49b2b;
+    border-color: #b38a24;
+}

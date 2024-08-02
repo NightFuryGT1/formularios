@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMG - FORMULARIO DE INFORMACION</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluir CSS personalizado -->
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        .form-section {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .form-check-label {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 form-section">
+                <h2 class="text-center">Actualizar Informacion</h2>
+                <form>
+                    <!-- Campo de Texto -->
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
+                    </div>
+                    
+                    <!-- Campo de Correo Electrónico -->
+                    <div class="form-group">
+                        <label for="lastName">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Ingrese su correo Apellido" required>
+                    </div>
+
+                    <!-- Menú Desplegable para Deportes-->
+                    <div class="form-group">
+                        <label for="dropdown">Deporte Favorito:</label>
+                        <select class="form-control" id="dropdownDeportes" required>
+                            <option value="" disabled selected>Elija una opción...</option>
+                            <option value="americano">Futbol Americano</option>
+                            <option value="soccer">Soccer</option>
+                            <option value="basquetball">Basquetball</option>
+                        </select>
+                    </div>
+
+                    <!-- Checkboxes para Intereses -->
+                    <div class="form-group">
+                        <label>Seleccione sus intereses:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="interest1">
+                            <label class="form-check-label" for="masculino">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="interest2">
+                            <label class="form-check-label" for="femenino">Femenino</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="interest3">
+                            <label class="form-check-label" for="neutro">No estoy Seguro</label>
+                        </div> 
+                    </div>
+
+                    <!-- Menú Desplegable  para Estados de Recidencia-->
+                    <div class="form-group">
+                        <label for="dropdown">Estado de Recidencia:</label>
+                        <select class="form-control" id="dropdownRecidencia" required>
+                            <option value="" disabled selected>Elija una opción...</option>
+                            <option value="newyork">New York</option>
+                            <option value="newjersy">New Jersy</option>
+                            <option value="chicago">Chicago</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Checkbox Mayor 21 años -->
+                    <div class="form-group">
+                     <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mayor21">
+                            <label class="form-check-label" for="interest1">21 años o mas</label>
+                     </div>
+                    </div>
+
+                    <!-- Checkboxes modelos de Autos -->
+                    <div class="form-group">
+                        <label>Modelos de autos que posees:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Ford">
+                            <label class="form-check-label" for="interest1">Ford</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Toyota">
+                            <label class="form-check-label" for="interest2">Toyota</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Honda">
+                            <label class="form-check-label" for="interest3">Honda</label>
+                        </div> 
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Nissan">
+                            <label class="form-check-label" for="interest3">Nissan</label>
+                        </div> 
+                    </div>
+
+                    <!-- Botón de Enviar -->
+                    <button type="submit" class="btn btn-custom">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Incluir jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
